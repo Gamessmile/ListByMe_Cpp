@@ -14,6 +14,7 @@ di nuova head</p></h3>
 
 <img align="center" src="https://i.ibb.co/pbQnPyq/Linkedlist.png" alt="Linked List" width="700" /></a>
 <hr>
+<h4 align="left">Author: Gamessmile</h4>
 
 <h3 align="right">My Socials</h3>
 <p align="right">

@@ -15,7 +15,6 @@ di nuova head</p></h3>
 <img align="center" src="https://i.ibb.co/pbQnPyq/Linkedlist.png" alt="Linked List" width="700" /></a>
 <hr>
 <h4 align="left">Author: Gamessmile</h4>
-
 <h3 align="right">My Socials</h3>
 <p align="right">
 <a href="https://instagram.com/_gamessmile_" target="blank"><img align=center" src="https://cdn.icon-icons.com/icons2/1753/PNG/512/iconfinder-social-media-applications-3instagram-4102579_113804.png" alt="_gamessmile_" height="40" width"50" /></a>

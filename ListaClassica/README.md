@@ -9,7 +9,7 @@ la punta.</p></h3>
   
 <h2 align="center">Esempio di lista linkata</h2>
 
-<img align="center" src="https://i.ibb.co/pbQnPyq/Linkedlist.png" alt="Linked List" width="600" /></a>
+<img align="center" src="https://i.ibb.co/pbQnPyq/Linkedlist.png" alt="Linked List" width="700" /></a>
 
   la funzione INSERT va ad aggiungere solamente in cima, quindi ottenendo il ruolo
    di nuova head

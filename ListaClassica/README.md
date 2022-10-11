@@ -7,9 +7,9 @@ dim è un valore numerico che sta a definire la dimensione della lista.</p>
 *head è un puntatore che punta al primo elemento della lista, immaginabile come
 la punta.</p></h3>
   
-  Esempio, come se fosse una lista di interi:
+<h2 align="center">Esempio di lista linkata</h2>
 
-   15,head,next -> 16,next -> 15, next -> NULLPTR
+<img align="center" src="https://i.ibb.co/pbQnPyq/Linkedlist.png"></img>
 
   la funzione INSERT va ad aggiungere solamente in cima, quindi ottenendo il ruolo
    di nuova head

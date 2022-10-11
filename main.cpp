@@ -1,4 +1,4 @@
-#include "list.h"
+#include "ListaClassica\list.h"
 
 using namespace std;
 

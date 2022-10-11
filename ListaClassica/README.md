@@ -11,6 +11,6 @@ la punta.</p></h3>
 
 <img align="center" src="https://i.ibb.co/pbQnPyq/Linkedlist.png" alt="Linked List" width="700" /></a>
 
-  la funzione INSERT va ad aggiungere solamente in cima, quindi ottenendo il ruolo
-   di nuova head
+<h3 align="left">la funzione INSERT va ad aggiungere solamente in cima, quindi ottenendo il ruolo
+di nuova head</h3>
 

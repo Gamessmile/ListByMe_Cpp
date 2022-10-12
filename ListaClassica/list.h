@@ -36,4 +36,20 @@ class ClassicList{
             }
             return os;
         }
+
+        Node<T>* operator() (int i){
+            if(i > this->dim){
+                cerr << "\n\nLa dimensione della lista, e' inferiore a l'input da lei richiesto";
+                exit(5);
+            }
+            else{
+                Node<T> *ptr = this->head;
+                for(int j=0; j<i-1;j++){
+                    ptr = ptr->getNext();
+                }
+                cout << "\nIl valore nella posizione " << i <<" nella lista, e' il seguente:\n" << i << ") ";
+                return ptr;
+                
+            }
+        }
 };

@@ -1,4 +1,4 @@
-#include "ListaClassica\list.h"
+#include "list.h"
 
 using namespace std;
 
@@ -15,11 +15,17 @@ int main(){
     lista.insert(52);
     // head = 52, next = 14, next = 5, next = 4, next = nullptr
 
-    cout << lista;
+    cout << lista << endl;
+    lista.removen(2);
+    cout << lista <<endl;
+    lista.remove(5);
+    cout << lista << endl;
+    lista.remove(52);
+    cout << lista << endl;
 
 
-    cout << *lista(3); // Stampa elemento numerato 3
-    cout << *lista(9); // Errore
+    //cout << *lista(3); // Stampa elemento numerato 3
+    //cout << *lista(9); // Errore
 
 
 }

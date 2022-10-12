@@ -27,8 +27,62 @@ class ClassicList{
             }
         }
 
-        friend ostream& operator <<(ostream& os, const ClassicList<T>& obj){
+        void removen(int i){ //Rimuove l'elemento nella posizione i
+            if(i+1 > this->dim){
+                cerr << "\n\nLa dimensione della lista, e' inferiore a l'input da lei richiesto";
+                exit(3);
+            }
+            else{
+                Node<T> *ptr = this->head;
+                for ( int j=0; j<i-2; j++){
+                    ptr = ptr -> getNext();
+                }
+                Node<T> *ctr = ptr->next;
+                ptr->next=ptr->next->next;
+                ctr->next = nullptr;
+                ctr->val = 0;
+                delete ctr;
+                this->dim--;
+            }
+        }
+
+        void remove(T valore){ //Rimuove l'elemento preso in input
+            Node<T> *ptr = this->head;
+            if(ptr->val == valore){
+                    Node<T> *ctr = ptr;
+                    this->head = ptr->next;
+                    ptr->next = nullptr;
+                    ctr->next = nullptr;
+                    delete ctr;
+                    this->dim--;
+                    return;
+            }
+            for ( int i=0; i<this->dim-2; i++){        
+                if(ptr->next->val == valore){
+                    Node<T> *ctr = ptr->next;
+                    ptr->next = ptr->next->next;
+                    ctr->next = nullptr;
+                    delete ctr;
+                    this->dim--;
+                    return;
+                }
+                ptr = ptr->getNext();
+            }
+            cerr << "Valore in input non presente nella lista";
+            exit(4);
+        }
+
+        Node<T>* getHead(){
+            return head;
+        }
+        int getDim(){
+            return dim;
+        }
+
+        friend ostream& operator <<(ostream& os,  ClassicList<T>& obj){
             Node<T> *ptr = obj.head;
+            os << "Dimensione= "<< obj.getDim();
+            os << "\nHead= " << *(obj.getHead()) << endl << endl;
             
             for(int i=1;ptr;i++){
                 os << i << ") " << *ptr << endl;

@@ -7,7 +7,10 @@
 ●*head è un puntatore che punta al primo elemento della lista, immaginabile come
 la punta.</p>
 ●La funzione insert() va ad aggiungere solamente in cima, quindi ottenendo il ruolo
-di nuova head</p></h3>
+di nuova head.</p>
+●La funzione removen() va ad eliminare il valore presente nella X posizione specificata nel richiamo sul main.</p>
+●La funzione remove() va ad eliminare il valore preso in input, nel richiamo sul main, dalla lista.</p>
+</h3>
   
 <hr>
 <h2 align="center">Esempio di lista linkata</h2>

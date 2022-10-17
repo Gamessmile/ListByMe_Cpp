@@ -21,4 +21,13 @@ int main(){
     lista.remove(3,"valore");
     cout << lista <<endl << endl;
 
+
+    lista.insert(3,"cima");
+    lista.insert(8,"cima");
+    lista.insert(19,"cima");
+    lista.insert(9,"cima");
+    lista.bubble("Decrescente");
+    cout << lista <<endl << endl;
+    lista.bubble("Crescente"); //NON FUNZIONA
+    cout << lista <<endl << endl;
 }

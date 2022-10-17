@@ -152,6 +152,73 @@ class listdl{
         
         }
 
+        void bubble(string s){
+            if(s != "Decrescente" && s != "Crescente"){
+                cerr << "Specificare in che metodo riordinare la lista.\nAgenda:\nCrescente = riordinare"<<
+                " la lista ritrovandosi come primo elemento (head) l'elemento col valore più basso, e l'"<<
+                "ultimo elemento (tail) come l'elemento col valore più alto.\n\nDecresente = riordinare la"<<
+                " lista ritrovandosi come primo elemento (head) l'elemento col valore piu' alto, e l'ultimo"<<
+                " elemento (tail) come l'elemento col valore più basso.\n\n";
+                exit(4);
+            }
+            if(s == "Decrescente"){
+                int cont = 0;
+                Node<T> *appogg = nullptr;
+                while(cont < dim-2){
+                    cont = 0;
+                    Node<T> *ptr = head;
+                    for(int i=0; i<dim-2; i++){
+                        
+                        if(ptr->val<ptr->next->val){
+                            appogg = ptr->next;
+                            appogg->pre = ptr->pre;
+                            ptr->pre = appogg;
+                            ptr->next = appogg->getNext();
+                            appogg->next = ptr;
+                            if(this->head==appogg->next){
+                                this->head = appogg;
+                            }
+                            if(this->tail==appogg){
+                                this->tail = appogg->next;
+                            }
+                            ptr=appogg;
+                        }
+                        else{cont++;}
+                        ptr = ptr->getNext();
+                    }
+                }
+            }
+
+            if(s == "Crescente"){ //NON VA
+                int cont = 0;
+                Node<T> *appogg = nullptr;
+                while(cont < dim-2){
+                    cont = 0;
+                    Node<T> *ptr = head;
+                    for(int i=0; i<dim-2; i++){
+                        
+                        if(ptr->val>ptr->next->val){
+                            appogg = ptr->next;
+                            appogg->pre = ptr->pre;
+                            ptr->pre = appogg;
+                            ptr->next = appogg->getNext();
+                            appogg->next = ptr;
+                            if(this->head==appogg->next){
+                                this->head = appogg;
+                            }
+                            if(this->tail==appogg){
+                                this->tail = appogg->next;
+                            }
+                            ptr=appogg;
+                        }
+                        else{cont++;}
+                        ptr = ptr->getNext();
+                    }   
+                }
+            }
+
+        }
+
         friend ostream& operator <<(ostream& os, listdl<T>& obj){
             os << "*head= " << *obj.head << endl << "*tail= " <<*obj.tail<<"\n\n";
             Node<T> *ptr = obj.head;

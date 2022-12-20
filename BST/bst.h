@@ -83,17 +83,11 @@ class BST{
                 cerr << "Il bst e' vuoto";
                 exit(1);
             }
-        
-
-            if(ptr->left){
-                PreOrder(ptr->left);
-                visit(ptr);
+            if(!ptr){
+                return;
             }
-            if(ptr->right!=nullptr){
-                PreOrder(ptr->right);
-                visit(ptr);
-            }
+            visit(ptr);    
+            PreOrder(ptr->left);
+            PreOrder(ptr->right);       
         }
-
-        
 };

@@ -65,9 +65,9 @@ class BST{
                     grande a destra.
         */
 
-       void visit(){
-            cout << "\nradice:" << *radice;
-       }
+        void visit(){
+            cout << "\nradice:" << *radice << endl;
+        }
 
         void visit(BSTVer<T>* ptr){
             cout << *ptr;
@@ -90,4 +90,41 @@ class BST{
             PreOrder(ptr->left);
             PreOrder(ptr->right);       
         }
+
+        void PostOrder(){
+            cout << "Stampa del bst seguendo la visita 'PostOrder'" << endl;
+            PostOrder(radice);
+        }
+
+        void PostOrder(BSTVer<T>* ptr){
+            if(isEmpty()){
+                cerr << "Il bst e' vuoto";
+                exit(1);
+            }
+            if(!ptr){
+                return;
+            }  
+            PostOrder(ptr->left);
+            PostOrder(ptr->right);
+            visit(ptr);
+        }
+
+        void InOrder(){
+            cout << "Stampa del bst seguendo la visita 'InOrder'" << endl;
+            InOrder(radice);
+        }
+
+        void InOrder(BSTVer<T>* ptr){
+            if(isEmpty()){
+                cerr << "Il bst e' vuoto";
+                exit(1);
+            }
+            if(!ptr){
+                return;
+            }  
+            InOrder(ptr->left);
+            visit(ptr);
+            InOrder(ptr->right);
+        }
 };
+

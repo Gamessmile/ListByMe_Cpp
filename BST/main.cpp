@@ -7,20 +7,30 @@ using namespace std;
 int main(){
     BST<int> bst1;
 
-    bst1.insert(8);
-    bst1.insert(3);
+    bst1.insert(25);
+    bst1.insert(15);
     bst1.insert(10);
-    bst1.insert(1);
-    bst1.insert(6);
     bst1.insert(4);
-    bst1.insert(7);
-    bst1.insert(14);
-    bst1.insert(13);
+    bst1.insert(12);
+    bst1.insert(22);
+    bst1.insert(18);
+    bst1.insert(24);
+    bst1.insert(50);
+    bst1.insert(35);
+    bst1.insert(31);
+    bst1.insert(44);
+    bst1.insert(70);
+    bst1.insert(66);
+    bst1.insert(90);
+    
 
 
-
-    bst1.PreOrder();
     bst1.visit();
+    bst1.PreOrder();
+    cout << endl << endl;
+    bst1.PostOrder();
+    cout << endl << endl;
+    bst1.InOrder();
 
 
 

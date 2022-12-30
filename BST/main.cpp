@@ -31,7 +31,10 @@ int main(){
     bst1.PostOrder();
     cout << endl << endl;
     bst1.InOrder();
-
+    cout << endl << endl;
+    bst1.min();
+    cout << endl << endl;
+    bst1.max();
 
 
 }

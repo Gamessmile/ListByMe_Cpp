@@ -43,7 +43,6 @@ class BST{
             //Input, lo facciamo tramite la ricorsione, rieseguiamo la funzione
             //Ma con ptr in input il figlio di quello vecchio che soddisfi le
             //Condizioni
-
             else if(val<= ptr->val){
                 return insert(ptr->left, val);
             }
@@ -51,19 +50,6 @@ class BST{
                 return insert(ptr->right, val);
             }
         }
-
-        /*
-        SPIEGAZIONE ALLA "AMMUZZO" DI MERDA HEYHEY
-            Abbiamo tre tipi di visita, preorder, postorder, inorder:
-                PreOrder, si prende: radice->si scorre fino a foglia sinistra(albero sinistro), poi presi "fratelli"
-                    e rispettivi "figli" di essi sempre con logica "prima quello sinistro", poi albero destro 
-                PostOrder, si prende: partendo dalla foglia più a sinistra dell'albero sinistro,
-                    si prende il "fratello" e poi il genitore, per poi pian piano spostarsi nelle foglie
-                    "destre" dell'albero sinistro, si applica la stessa logica nell'albero destro,
-                    e in fine la radice.
-                InOrder, visita ordinata, parte dall'elemento più piccolo a sinistra e si scorre fino al più
-                    grande a destra.
-        */
 
         void visit(){
             cout << "\nradice:" << *radice << endl;
@@ -126,5 +112,61 @@ class BST{
             visit(ptr);
             InOrder(ptr->right);
         }
+
+        void min(){
+            if(isEmpty()){
+                cerr << "Il bst é vuoto";
+                exit(1);
+            }
+            cout << "L'elemento minimo nel'BST e': ";
+            min(radice);
+        }
+        void min(BSTVer<T>* ptr){
+            if(ptr->left){
+                min(ptr->left); //Per definizione, il figlio sinistro é < del genitore, quindi la foglia dell'albero sinistro sará l'elemento minore
+                return;
+            }
+            else{
+                visit(ptr);
+                return;
+            }
+        }
+        
+        void max(){
+            if(isEmpty()){
+                cerr << "Il bst é vuoto";
+                exit(1);
+            }
+            cout << "L'elemento massimo nel'BST e': ";
+            max(radice);
+        }
+        void max(BSTVer<T>* ptr){
+            if(ptr->right){
+                max(ptr->right);//Per definizione, il figlio destro é > del genitore, quindi la foglia dell'albero destro sará l'elemento maggiore
+                return;
+            }
+            else{
+                visit(ptr);
+                return;
+            }
+        }
+
+        void successor(BSTVer<T>* ptr){
+            if(isEmpty()){
+                cerr << "Il bst e' vuoto";
+                exit(1);
+            }
+            if(ptr->right){
+                min(ptr->right); //Il successore, é l'elemento piú piccolo del sotto albero destro (se esiste)
+                return
+            }
+            //IN CASO CHE IL SUCCESSIVO ELEMENTO NON ESISTESSE
+            //.:.Aspettando spiegazione Sara che discorso brutto e non mi va di capire per ora
+
+        }
+        
+
+
+
 };
 

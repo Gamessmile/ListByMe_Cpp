@@ -113,60 +113,81 @@ class BST{
             InOrder(ptr->right);
         }
 
-        void min(){
+        BSTVer<T>* min(){
             if(isEmpty()){
                 cerr << "Il bst é vuoto";
                 exit(1);
             }
             cout << "L'elemento minimo nel'BST e': ";
-            min(radice);
+            return min(radice);
         }
-        void min(BSTVer<T>* ptr){
+        BSTVer<T>* min(BSTVer<T>* ptr){
             if(ptr->left){
-                min(ptr->left); //Per definizione, il figlio sinistro é < del genitore, quindi la foglia dell'albero sinistro sará l'elemento minore
-                return;
+                return min(ptr->left);//Per definizione, il figlio sinistro é < del genitore, quindi la foglia dell'albero sinistro sará l'elemento minore
             }
             else{
                 visit(ptr);
-                return;
+                return ptr;
             }
         }
         
-        void max(){
+        BSTVer<T>* max(){
             if(isEmpty()){
                 cerr << "Il bst é vuoto";
                 exit(1);
             }
             cout << "L'elemento massimo nel'BST e': ";
-            max(radice);
+            return max(radice);
         }
-        void max(BSTVer<T>* ptr){
+        BSTVer<T>* max(BSTVer<T>* ptr){
             if(ptr->right){
-                max(ptr->right);//Per definizione, il figlio destro é > del genitore, quindi la foglia dell'albero destro sará l'elemento maggiore
-                return;
+                return max(ptr->right);//Per definizione, il figlio destro é > del genitore, quindi la foglia dell'albero destro sará l'elemento maggiore
             }
             else{
                 visit(ptr);
-                return;
+                return ptr;
             }
         }
 
-        void successor(BSTVer<T>* ptr){
+        BSTVer<T>* successor(BSTVer<T>* ptr){
             if(isEmpty()){
                 cerr << "Il bst e' vuoto";
                 exit(1);
             }
             if(ptr->right){
-                min(ptr->right); //Il successore, é l'elemento piú piccolo del sotto albero destro (se esiste)
-                return
+                return min(ptr->right); //Il successore, é l'elemento piú piccolo del sotto albero destro (se esiste)
             }
             //IN CASO CHE IL SUCCESSIVO ELEMENTO NON ESISTESSE
-            //.:.Aspettando spiegazione Sara che discorso brutto e non mi va di capire per ora
+            //Si cerca il primo antenato che abbia come figlio sinistro il nodo stesso o un suo antenato.
+            BSTVer<T>* dad = ptr->gen;
+            while(ptr!=nullptr && ptr == dad->right){//Caso cui ptr é figlio destro, scorriamo
+                ptr = dad;
+                dad = dad->gen;
+            }
+            return dad;
+        }
+
+        BSTVer<T>* search(T input){
+            return search(radice, input);
+        }
+
+        BSTVer<T>* search(BSTVer<T>* ptr, T input){
+
+            if(ptr->val>input){
+                return search(ptr->left, input);
+            }
+
+            if(ptr->val<input){
+                return search(ptr->right, input);
+            }
+
+            if(ptr->val==input){
+                return ptr;
+            }
+
+            return nullptr;
 
         }
-        
-
-
-
 };
+
 

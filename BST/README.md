@@ -14,5 +14,7 @@
 <h4>●min(), max(), vanno a stampare il nodo con il valore rispettivamente minimo e massimo presenti all'interno del bst.</h>
 <h4>●search(), una funzione che va a ritornare un nodo partendo dal valore.</h>
 
+<h3>Immagine raffigurante il BST utilizzato nel main del codice</h>
+
 ![BST_used_in_the_example](BST_used_in_the_example.png)
 </html>

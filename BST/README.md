@@ -3,10 +3,9 @@
 <h6>Albero binario di Ricerca</h><br>
 
 
-<h5>Il BST é una struttura dati binaria, si tratta di un grafo aciclico, connesso e dove é possibile riconoscerne una radice, un albero sostanzialmente.</h>
-<h5>L'ordine in cui i vari nodi (o vertici) é scelto in baso al valore che essi hanno, il nodo genitore deve avere come figlio sinistro un nodo con un valore piú piccolo, mentre come figlio destro un nodo con un valore piú grande.</h>
+<h4>Il BST é una struttura dati binaria, si tratta di un grafo aciclico, connesso e dove é possibile riconoscerne una radice, un albero sostanzialmente.<br>L'ordine in cui i vari nodi (o vertici) é scelto in baso al valore che essi hanno, il nodo genitore deve avere come figlio sinistro un nodo con un valore piú piccolo, mentre come figlio destro un nodo con un valore piú grande.</h>
 
-<h5>Le funzione presenti nel codice:</h>
+<h3>Le funzione presenti nel codice:</h>
 <h5>●isEmpty(), funzione che va a ritornare TRUE o FALSE, dipendentemente se esiste o meno una radice.</h>
 <h5>●insert(), va a inserire un nuovo nodo (e il relativo valore).</h>
 <h5>●remove(), va a rimuovere un nodo.</h>

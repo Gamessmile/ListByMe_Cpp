@@ -36,5 +36,8 @@ int main(){
     cout << endl << endl;
     bst1.max();
 
+    bst1.remove(50);
+    cout << "\nELEMENTO DA RIMUOVERE = 50\n";
+    bst1.PreOrder();
 
 }

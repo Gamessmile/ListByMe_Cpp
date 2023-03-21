@@ -9,10 +9,11 @@
 <h3 align="left">●isEmpty(), funzione che va a ritornare TRUE o FALSE, dipendentemente se esiste o meno una radice.</p>
 ●insert(), va a inserire un nuovo nodo (e il relativo valore).</p>
 ●remove(), va a rimuovere un nodo.</p>
-●visit(), andrá ad effettuare una fra le 3 diverse visite del BST.</p>
+●visit(), va a stampare il nodo in input.</p>
 ●PreOrder(), PostOrder(), InOrder(), sono tute e 3 le relative visite che sfruttano la funzione visit per andare a stampare il bst nel modo corretto.</p>
 ●min(), max(), vanno a stampare il nodo con il valore rispettivamente minimo e massimo presenti all'interno del bst.</p>
 ●search(), una funzione che va a ritornare un nodo partendo dal valore.</p></h3><hr>
+●succesor(), una funzione che va a ritornare il nodo con il valore successivo a quello del nodo attuale.</p></h3><hr>
 
 <h3>Immagine raffigurante il BST utilizzato nel main del codice</h>
 

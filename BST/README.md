@@ -1,6 +1,6 @@
 <html>
   <h1>Albero binario di ricerca (Binary Search Tree)</h1>
-  <br>
+  <br> <hr>
 
   <h4>Il BST è una struttura dati binaria che rappresenta un albero ordinato. Ogni nodo dell'albero ha al massimo due figli, chiamati rispettivamente figlio sinistro e figlio destro. L'ordine dei nodi è determinato dal loro valore: il nodo genitore deve avere come figlio sinistro un nodo con un valore più piccolo e come figlio destro un nodo con un valore più grande. Questa proprietà deve valere per ogni nodo dell'albero, non solo per la radice.</h4>
 

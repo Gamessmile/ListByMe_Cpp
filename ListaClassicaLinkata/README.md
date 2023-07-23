@@ -1,19 +1,17 @@
-<h1 align="left">Lista classica linkata</h1><hr></p>
+<html>
+  <h1>Lista classica linkata</h1>
+  <hr>
 
+  <h3>La lista classica linkata è una struttura dati basata sul funzionamento di puntatori che puntano all'elemento successivo della lista. Ogni elemento della lista ha un puntatore *next che punta all'elemento successivo. La dimensione della lista è definita da un valore numerico dim. Inoltre, c'è un puntatore *head che punta al primo elemento della lista, ovvero la testa della lista.</h3> <hr>
 
-<h3 align="left">●Lista classica basata sul funzionamento di puntatori che puntano al successivo.</p>
-●*next ha come obbiettivo di puntare al successivo elemento della lista.</p>
-●dim è un valore numerico che sta a definire la dimensione della lista.</p>
-●*head è un puntatore che punta al primo elemento della lista, immaginabile come
-la punta.</p>
-●La funzione insert() va ad aggiungere solamente in cima, quindi ottenendo il ruolo
-di nuova head.</p>
-●La funzione removen() va ad eliminare il valore presente nella X posizione specificata nel richiamo sul main.</p>
-●La funzione remove() va ad eliminare il valore preso in input, nel richiamo sul main, dalla lista.</p>
-</h3>
-  
-<hr>
-<h2 align="center">Esempio di lista linkata</h2>
+  <ul>
+    <li><strong>insert():</strong> aggiunge un nuovo elemento in cima alla lista, diventando la nuova head.</li>
+    <li><strong>removen():</strong> elimina l'elemento presente nella posizione X specificata nel richiamo sul main.</li>
+    <li><strong>remove():</strong> elimina l'elemento con il valore preso in input nel richiamo sul main dalla lista.</li>
+  </ul>
+
+  <hr>
+  <h2>Esempio di lista linkata:</h2>
 
 <img align="center" src="https://i.ibb.co/pbQnPyq/Linkedlist.png" alt="Linked List" width="700" /></a>
 <hr>

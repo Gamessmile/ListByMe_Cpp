@@ -1,18 +1,16 @@
-<h1 align="left">Lista Doppio Linkata</h1><hr></p>
+<html>
+  <h1>Lista doppio linkata</h1>
+  <hr>
 
+  <h3>La lista doppio linkata è una struttura dati basata sul funzionamento di puntatori che puntano sia all'elemento successivo che a quello precedente della lista. Ogni elemento della lista ha un puntatore *next che punta all'elemento successivo e un puntatore *pre che punta all'elemento precedente. La dimensione della lista è definita da un valore numerico dim. Inoltre, ci sono due puntatori: *head, che punta al primo elemento della lista (la cima), e *tail, che punta all'ultimo elemento della lista (la coda).</h3><hr>
 
-<h3 align="left">●Lista doppio linkata basata sul funzionamento di puntatori che puntano al successivo e al precedente.</p>
-●*next ha come obbiettivo di puntare al successivo elemento della lista.</p>
-●*pre ha come obbiettivo di puntare al precedente elemento della lista.</p>
-●dim è un valore numerico che sta a definire la dimensione della lista.</p>
-●*head è un puntatore che punta al primo elemento della lista, immaginabile come
-la cima.</p>
-●*tail è un puntatore che punta all'ultimo elemento della lista, immaginabile come
-la coda.</p>
-●La funzione insert() va ad aggiungere elementi in base al metodo in cui viene richiamato nel main, guardare funzione per comprendere meglio.</p>
-●La funzione remove() va a rimuovere elementi in base al metodo in cui viene richiamato nel main, guardare la funzione per comprendere meglio.</p></h3>
-<hr>
-<h2 align="center">Esempio di lista doppio linkata</h2>
+  <ul>
+    <li><strong>insert():</strong> aggiunge elementi in base al metodo in cui viene richiamato nel main. Per comprendere meglio, si consiglia di guardare la funzione.</li>
+    <li><strong>remove():</strong> rimuove elementi in base al metodo in cui viene richiamato nel main. Per comprendere meglio, si consiglia di guardare la funzione.</li>
+  </ul>
+
+  <hr>
+  <h2>Esempio di lista doppio linkata:</h2>
 
 <img align="center" src="https://i.ibb.co/bbpcVXd/Double-Linkedlist.png" alt="Linked List" width="700" /></a>
 <hr>

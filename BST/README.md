@@ -19,6 +19,7 @@
   <hr>
 
   <h3>Immagine raffigurante il BST utilizzato nel main del codice:</h3>
+  
   ![BST_used_in_the_example](BST_used_in_the_example.png)
 
 

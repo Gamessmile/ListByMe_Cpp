@@ -9,7 +9,7 @@
     <li><a href="https://github.com/Gamessmile/ListByMe_Cpp/tree/main/BST">BST</a>: una struttura dati con determinate caratteristiche.</li>
   </ul><hr>
 
-  <h6>All'interno delle rispettive cartelle è presente un file README che spiega il funzionamento della lista e delle relative funzioni.</h6><hr>
+  <h6>All'interno delle rispettive cartelle è presente un file README che spiega il funzionamento delle strutture dati e delle relative funzioni.</h6><hr>
   <h3>Come utilizzare la libreria ListByMe_Cpp:</h3>
   <p>Per utilizzare la libreria ListByMe_Cpp, puoi clonare la repository su GitHub utilizzando il comando `git clone` seguito dall'URL della repository:</p>
 

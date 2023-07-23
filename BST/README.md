@@ -1,24 +1,26 @@
 <html>
-<h1>Binary Search Tree</h1>
-<h6>Albero binario di Ricerca</h6><br>
+  <h1>Albero binario di ricerca (Binary Search Tree)</h1>
+  <br>
 
+  <h4>Il BST è una struttura dati binaria che rappresenta un albero ordinato. Ogni nodo dell'albero ha al massimo due figli, chiamati rispettivamente figlio sinistro e figlio destro. L'ordine dei nodi è determinato dal loro valore: il nodo genitore deve avere come figlio sinistro un nodo con un valore più piccolo e come figlio destro un nodo con un valore più grande. Questa proprietà deve valere per ogni nodo dell'albero, non solo per la radice.</h4>
 
-<h4>Il BST é una struttura dati binaria, si tratta di un grafo aciclico, connesso e dove é possibile riconoscerne una radice, un albero sostanzialmente.<br>L'ordine in cui i vari nodi (o vertici) sono disposti, é scelto in baso al valore che essi hanno, il nodo genitore deve avere come figlio sinistro un nodo con un valore piú piccolo, mentre come figlio destro un nodo con un valore piú grande.</h4>
+  <hr>
+  <h3>Funzioni presenti nel codice:</h3>
+  <ul>
+    <li><strong>isEmpty():</strong> funzione che restituisce TRUE o FALSE a seconda dell'esistenza o meno di una radice.</li>
+    <li><strong>insert():</strong> inserisce un nuovo nodo (e il relativo valore).</li>
+    <li><strong>remove():</strong> rimuove un nodo.</li>
+    <li><strong>visit():</strong> stampa il nodo in input.</li>
+    <li><strong>PreOrder(), PostOrder(), InOrder():</strong> sono le tre visite che utilizzano la funzione visit per stampare il BST nel modo corretto.</li>
+    <li><strong>min(), max():</strong> restituiscono rispettivamente il nodo con il valore minimo e massimo presenti all'interno del BST.</li>
+    <li><strong>search():</strong> restituisce un nodo a partire dal suo valore.</li>
+    <li><strong>successor():</strong> restituisce il nodo con il valore successivo a quello del nodo attuale.</li>
+  </ul>
+  <hr>
 
-<hr><h3>Le funzione presenti nel codice:</h3>
-<h3 align="left">●isEmpty(), funzione che va a ritornare TRUE o FALSE, dipendentemente se esiste o meno una radice.</p>
-●insert(), va a inserire un nuovo nodo (e il relativo valore).</p>
-●remove(), va a rimuovere un nodo.</p>
-●visit(), va a stampare il nodo in input.</p>
-●PreOrder(), PostOrder(), InOrder(), sono tute e 3 le relative visite che sfruttano la funzione visit per andare a stampare il bst nel modo corretto.</p>
-●min(), max(), vanno a stampare il nodo con il valore rispettivamente minimo e massimo presenti all'interno del bst.</p>
-●search(), una funzione che va a ritornare un nodo partendo dal valore.</p>
-●succesor(), una funzione che va a ritornare il nodo con il valore successivo a quello del nodo attuale.</p></h3><hr>
+  <h3>Immagine raffigurante il BST utilizzato nel main del codice:</h3>
+  ![BST_used_in_the_example](BST_used_in_the_example.png)
 
-<h3>Immagine raffigurante il BST utilizzato nel main del codice</h>
-
-![BST_used_in_the_example](BST_used_in_the_example.png)
-</html>
 
 <h4 align="left"><i>Author: Gamessmile</i></h4>
 <h3 align="right">My Socials</h3>
@@ -32,3 +34,4 @@
 <a href="https://discord.com/users/327529848941576194" target="blank"><img align=center" src="https://cdn.icon-icons.com/icons2/2108/PNG/512/discord_icon_130958.png" alt="Gamessmile - Legion" height="40" width"50" /></a>
 <a href="https://t.me/Gamessmile" target="blank"><img align=center" src="https://cdn.icon-icons.com/icons2/2108/PNG/512/telegram_icon_130816.png" alt="Gamessmile" height="40" width"50" /></a>
 </p>
+</html>
